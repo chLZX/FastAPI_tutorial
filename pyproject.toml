@@ -1,0 +1,17 @@
+[project]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi-exception>=1.3.10",
+    "fastapi[standard]>=0.141.1",
+]
+
+[project.scripts]
+fastapi-tutorial = "fastapi_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
