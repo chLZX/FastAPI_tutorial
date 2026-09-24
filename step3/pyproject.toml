@@ -1,0 +1,21 @@
+[project]
+name = "book-system"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi[standard]>=0.141.1",
+    "fastapi-exceptions>=0.1.0",
+    "pydantic-settings>=2.15.0",
+    "sqlmodel>=0.0.45",
+    "asyncpg>=0.31.0",
+    "greenlet>=3.5.6",
+]
+
+[project.scripts]
+book-system = "book_system:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
